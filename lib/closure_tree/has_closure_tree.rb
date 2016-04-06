@@ -9,7 +9,8 @@ module ClosureTree
         :name_column,
         :order,
         :touch,
-        :with_advisory_lock
+        :with_advisory_lock,
+        :root_value
       )
 
       class_attribute :_ct
