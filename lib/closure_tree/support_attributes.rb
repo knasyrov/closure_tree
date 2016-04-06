@@ -45,6 +45,10 @@ module ClosureTree
       name_column.to_sym
     end
 
+    def root_value
+      options[:root_value]
+    end
+
     # Returns the constant name of the hierarchy_class
     #
     # @return [String] the constant name
