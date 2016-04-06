@@ -61,7 +61,7 @@ module ClosureTree
       end
 
       def roots
-        _ct.scope_with_order(where(_ct.parent_column_name => nil))
+        _ct.scope_with_order(where(_ct.parent_column_name => _ct.root_value))
       end
 
       # Returns an arbitrary node that has no parents.
